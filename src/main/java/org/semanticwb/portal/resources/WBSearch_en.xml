@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<admresource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<xslfile>admresource.xslt</xslfile>
+	<form name="frmSearch" action="true" method="POST" enctype="multipart/form-data">
+		<admdbconnmgr defconn="true"/>
+                <fieldset>
+		<input type="FILE" name="template" label="Template (xsl, xslt):" showfile="true" msg="Current template " bydefault="{@webpath}wbadmin/xsl/WBSearch/WBSearch.xsl" msgbydefault="Default template " filetype="xsl|xslt" isshowfiletype="true" size="40"/>
+                <input type="CHECKBOX" name="amaps" label="Search all sites" value="1"/>
+                <input type="TEXT" name="tpini" label="Category"/>
+                <input type="TEXT" name="cls" label="Class"/>
+                <input type="TEXT" name="pageSize" label="Page size"/>
+                </fieldset>
+                <fieldset>
+		<input type="SUBMIT" name="btnSave"  value="Save" />
+		<input type="RESET"  name="btnReset" value="Cancel" />
+                </fieldset>
+	</form>
+</admresource>
